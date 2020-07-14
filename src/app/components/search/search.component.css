@@ -1,0 +1,17 @@
+.search {
+  width: 500px;
+  margin: 10px auto;
+}
+.searchIpt {
+  width: 400px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+.searchBtn {
+  width: 96px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+li {
+  list-style: none;
+}

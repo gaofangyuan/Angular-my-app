@@ -1,0 +1,42 @@
+<div class="wrapper">
+  <h1>人员信息登记</h1>
+  <span class="content_span">姓名：</span>
+  <input type="text" [(ngModel)]="form[0].name">
+  <br/>
+
+  <span class="content_span">性别：</span>
+  <input type="radio" value="男" name="sex" id="male" [(ngModel)]="form[0].sex" />
+  <label for="male">男</label>
+  <input type="radio" value="女" name="sex" id="female" [(ngModel)]="form[0].sex" />
+  <label for="female">女</label>
+  <br/>
+
+  <span class="content_span">所在地区：</span>
+  <select name="formSex" [(ngModel)]="form[0].area">
+    <option *ngFor="let item of area" [value]="item">{{item}}</option>
+  </select>
+  <br/>
+
+  <div class="warpper_hobby">
+    <span class="content_span float_left">爱好：</span>
+    <div class="rightInput float_left">
+      <span class="hobby" *ngFor="let item of hobby; let key=index">
+        <input type="checkbox" [id]="'hobby'+key" [(ngModel)]="item.che" /><label [for]="'hobby'+key">{{item.title}}</label>
+      </span>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+  <div class="warpper_hobby">
+    <span class="content_span float_left">描述：</span>
+    <textarea class="float_left" name="" id="" [(ngModel)]="form[0].describe"></textarea>
+    <div class="clear"></div>
+  </div>
+
+  <button (click)="getForm()">获取表单值</button>
+
+  <div style="text-align: left;">
+    <br/>
+    {{form | json}}
+  </div>
+</div>

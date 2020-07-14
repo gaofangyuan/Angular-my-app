@@ -1,0 +1,23 @@
+.search {
+  width: 500px;
+  margin: 10px auto;
+}
+.searchIpt {
+  width: 400px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+.searchBtn {
+  width: 96px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+li {
+  list-style: none;
+  background: #f2f2f2;
+  margin: 2px 0;
+}
+.css_label {
+  width: 487px;
+  display: inline-block;
+}

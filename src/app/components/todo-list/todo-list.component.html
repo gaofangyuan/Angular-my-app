@@ -1,0 +1,21 @@
+<div class="search">
+  <input class="searchIpt" type="text" name="" id="" [(ngModel)]="searchText" /><button class="searchBtn" (click)="searchClk()">添加</button>
+  <hr/>
+  <h3>待办事项</h3>
+  <ul>
+    <li *ngFor="let item of list; let key=index">
+      <div *ngIf="!item.start">
+        <input type="checkbox" [id]="'stay'+key" [(ngModel)]="item.start" (change)="addstart()" /><label class="css_label" [for]="'stay'+key">{{item.name}}</label>
+      </div>
+    </li>
+  </ul> 
+  {{list | json}}
+  <h3>已办事项</h3>
+  <ul>
+    <li *ngFor="let item of list; let key=index">
+      <div *ngIf="item.start">
+        <input type="checkbox" [id]="'stay'+key" [(ngModel)]="item.start" /><label class="css_label" [for]="'stay'+key">{{item.name}}</label>
+      </div>
+    </li>
+  </ul> 
+</div>

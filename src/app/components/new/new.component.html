@@ -1,0 +1,39 @@
+<p [style]="css_p">{{message}}</p>
+<p>{{name}}</p>
+<!-- for循环 -->
+<p *ngFor="let item of ary; let key=index">{{key}}--{{item}}</p>
+
+<!-- 条件判断 -->
+<div *ngIf="isIf">
+  <img src="assets/img/home.png" alt="">
+</div>
+<div *ngIf="!isIf">
+  <img src="assets/img/home_active.png" alt="">
+</div>
+
+<!-- swith判断 -->
+<div [ngSwitch]="isIf">
+  <div *ngSwitchCase="true">非活动状态</div>
+  <div *ngSwitchCase="false">活动状态</div>
+  <div *ngSwitchDefault>错误！</div>
+</div>
+
+<!-- ngClass样式 -->
+<div [ngClass]="{'wh50bck': true}"></div>
+<div [ngClass]="{'wh50bck': isIf==false ? true : false}"></div>
+
+<!-- 列表点击 -->
+<p class="cursor" *ngFor="let item of ary; let key=index" (click)="clkItem(key)" [ngClass]="{'colRed': listNum == key ? true : false}">{{key}}--{{item}}</p>
+
+<!-- 监听input值 -->
+<input type="text" value="" (keyup)="keyUp($event)" />
+<br />
+<!-- 修改input样式 -->
+<input type="button" value="111" (click)="clkIpt($event)" />
+<br />
+<!-- 双向绑定，针对表单，需要根模块引入@angular/forms -->
+<input type="text" [(ngModel)]="keywords" />{{keywords}}
+
+<br />
+<hr />  
+<br />

@@ -1,0 +1,13 @@
+<div class="search">
+  <input class="searchIpt" type="text" name="" id="" [(ngModel)]="searchText" /><button class="searchBtn" (click)="searchClk()">搜索</button>
+  <hr/>
+  <ul>
+    <li *ngFor="let item of list; let key=index">
+      {{item}}
+      <button (click)="searchDelete(key)">删除</button>
+    </li>
+    <li>
+      <button (click)="allDelete()">清空</button>
+    </li>
+  </ul> 
+</div>

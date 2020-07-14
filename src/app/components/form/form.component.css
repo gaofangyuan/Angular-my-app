@@ -1,0 +1,73 @@
+.wrapper {
+  text-align: center;
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #eeeeee;
+  background: #f6f6f6;
+  border-radius: 10px;
+}
+.content_span {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  height: 35px;
+  line-height: 35px;
+}
+.wrapper input[type="text"] {
+  height: 25px;
+  width: 180px;
+  line-height: 25px;
+  margin: 4px 0;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid steelblue;
+}
+.wrapper input[type="radio"] {
+  height: 15px;
+  width: 20px;
+}
+.wrapper label {
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  text-align: left;
+  display: inline-block;
+}
+.wrapper select {
+  height: 25px;
+  width: 200px;
+  line-height: 25px;
+  margin: 4px 0;
+  padding: 0 5px;
+  border-radius: 5px;
+  border: 1px solid steelblue;
+}
+.wrapper textarea {
+  height: 100px;
+  width: 190px;
+  line-height: 20px;
+  padding: 0 4px;
+  border-radius: 5px;
+  border: 1px solid steelblue;
+}
+.warpper_hobby {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+.rightInput {
+  display: block;
+  width: 200px;
+  text-align: left;
+}
+.hobby {
+  display: inline-block;
+  width: 66.666;
+  text-align: right;
+  height: 35px;
+  line-height: 35px;
+}
+.hobby label {
+  width: 53.666px;
+}
