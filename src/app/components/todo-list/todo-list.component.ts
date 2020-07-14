@@ -20,11 +20,8 @@ export class TodoListComponent implements OnInit {
     }
   }
 
-  addstart(key) {
-    console.log(key)
-    console.log(this.storage.get('todoLList'));
-    // this.storage.set('todoLList', this.list);
-    // console.log(this.storage.get('todoLList'))
+  addstart() {
+    this.storage.set('todoLList', this.list);
   }
 
   searchClk() {

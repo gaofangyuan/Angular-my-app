@@ -8,13 +8,13 @@
         <input type="checkbox" [id]="'stay'+key" [(ngModel)]="item.start" (change)="addstart()" /><label class="css_label" [for]="'stay'+key">{{item.name}}</label>
       </div>
     </li>
-  </ul> 
-  {{list | json}}
+  </ul>
+  
   <h3>已办事项</h3>
   <ul>
     <li *ngFor="let item of list; let key=index">
       <div *ngIf="item.start">
-        <input type="checkbox" [id]="'stay'+key" [(ngModel)]="item.start" /><label class="css_label" [for]="'stay'+key">{{item.name}}</label>
+        <input type="checkbox" [id]="'stay'+key" [(ngModel)]="item.start" (change)="addstart()" /><label class="css_label" [for]="'stay'+key">{{item.name}}</label>
       </div>
     </li>
   </ul> 
