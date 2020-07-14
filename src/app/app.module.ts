@@ -16,6 +16,8 @@ import { NewComponent } from './components/new/new.component';
 import { FormComponent } from './components/form/form.component';
 import { SearchComponent } from './components/search/search.component';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
+import { HomeComponent } from './components/home/home.component';
+import { TopNavComponent } from './components/common/top-nav/top-nav.component';
 
 // @NgModule装饰器，@NgModule接受一个元数据对象，告诉angular如何编译和启动应用
 @NgModule({
@@ -25,7 +27,9 @@ import { TodoListComponent } from './components/todo-list/todo-list.component';
     NewComponent,
     FormComponent,
     SearchComponent,
-    TodoListComponent
+    TodoListComponent,
+    HomeComponent,
+    TopNavComponent
   ],
   // 配置当前模块运行依赖的其他模块
   imports: [

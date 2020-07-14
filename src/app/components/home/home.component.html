@@ -1,0 +1,10 @@
+<app-top-nav #topnav></app-top-nav>
+<div id="box" *ngIf="isShow">
+  box内容
+</div>
+
+<div #box1 *ngIf="isShow">
+  box1内容
+</div>
+
+<button (click)="getNav()">获取子组件</button>
